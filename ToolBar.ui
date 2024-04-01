@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ToolBar</class>
+ <widget class="QWidget" name="ToolBar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>962</width>
+    <height>55</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ToolBar</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+background-color: rgba(214, 219, 224, 221);
+}</string>
+  </property>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>961</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	
+	background-color: rgb(255, 255, 255);
+	font: 9pt &quot;Adobe Heiti Std&quot;;
+	border-radius:5px;
+}
+QPushButton:pressed {
+    background-color: #d3d3d3; /* 明确指定按下时的背景色 */
+}</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>2</number>
+    </property>
+    <property name="leftMargin">
+     <number>4</number>
+    </property>
+    <property name="rightMargin">
+     <number>4</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="detailsButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>34</width>
+        <height>34</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	background-color: rgb(255, 255, 255);
+	font: 9pt &quot;Adobe Heiti Std&quot;;
+	border-radius:5px;
+}
+QPushButton:pressed {
+    background-color: #d3d3d3; /* 明确指定按下时的背景色 */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>resource/详细信息.png</normaloff>resource/详细信息.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="rotateFlipButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>34</width>
+        <height>34</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	background-color: rgb(255, 255, 255);
+	font: 9pt &quot;Adobe Heiti Std&quot;;
+	border-radius:5px;
+}
+QPushButton:pressed {
+    background-color: #d3d3d3; /* 明确指定按下时的背景色 */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="ToolBar.qrc">
+        <normaloff>:/ToolBarPrefix/resource/旋转.png</normaloff>:/ToolBarPrefix/resource/旋转.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="colorAdjustButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>34</width>
+        <height>34</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	background-color: rgb(255, 255, 255);
+	font: 9pt &quot;Adobe Heiti Std&quot;;
+	border-radius:5px;
+}
+QPushButton:pressed {
+    background-color: #d3d3d3; /* 明确指定按下时的背景色 */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>resource/颜色调整.png</normaloff>resource/颜色调整.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="effectsAdjustButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>34</width>
+        <height>34</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	background-color: rgb(255, 255, 255);
+	font: 9pt &quot;Adobe Heiti Std&quot;;
+	border-radius:5px;
+}
+QPushButton:pressed {
+    background-color: #d3d3d3; /* 明确指定按下时的背景色 */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>resource/特效调整.png</normaloff>resource/特效调整.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="labelViewButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>34</width>
+        <height>34</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	background-color: rgb(255, 255, 255);
+	font: 9pt &quot;Adobe Heiti Std&quot;;
+	border-radius:5px;
+}
+QPushButton:pressed {
+    background-color: #d3d3d3; /* 明确指定按下时的背景色 */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>resource/标签图.png</normaloff>resource/标签图.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="thumbnailButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>34</width>
+        <height>34</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	background-color: rgb(255, 255, 255);
+	font: 9pt &quot;Adobe Heiti Std&quot;;
+	border-radius:5px;
+}
+QPushButton:pressed {
+    background-color: #d3d3d3; /* 明确指定按下时的背景色 */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>resource/迷你图.png</normaloff>resource/迷你图.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="measureButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>34</width>
+        <height>34</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	background-color: rgb(255, 255, 255);
+	font: 9pt &quot;Adobe Heiti Std&quot;;
+	border-radius:5px;
+}
+QPushButton:pressed {
+    background-color: #d3d3d3; /* 明确指定按下时的背景色 */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>resource/测量.png</normaloff>resource/测量.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="annotateButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>34</width>
+        <height>34</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	background-color: rgb(255, 255, 255);
+	font: 9pt &quot;Adobe Heiti Std&quot;;
+	border-radius:5px;
+}
+QPushButton:pressed {
+    background-color: #d3d3d3; /* 明确指定按下时的背景色 */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>resource/标记.png</normaloff>resource/标记.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="photoButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>34</width>
+        <height>34</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	background-color: rgb(255, 255, 255);
+	font: 9pt &quot;Adobe Heiti Std&quot;;
+	border-radius:5px;
+}
+QPushButton:pressed {
+    background-color: #d3d3d3; /* 明确指定按下时的背景色 */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>resource/拍照.png</normaloff>resource/拍照.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="resetButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>34</width>
+        <height>34</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	background-color: rgb(255, 255, 255);
+	font: 9pt &quot;Adobe Heiti Std&quot;;
+	border-radius:5px;
+}
+QPushButton:pressed {
+    background-color: #d3d3d3; /* 明确指定按下时的背景色 */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>resource/复位.png</normaloff>resource/复位.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="zoom2xButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>34</width>
+        <height>34</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	background-color: rgb(255, 255, 255);
+	font: 9pt &quot;Adobe Heiti Std&quot;;
+	border-radius:5px;
+}
+QPushButton:pressed {
+    background-color: #d3d3d3; /* 明确指定按下时的背景色 */
+}</string>
+      </property>
+      <property name="text">
+       <string>2X</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="zoom5xButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>34</width>
+        <height>34</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	background-color: rgb(255, 255, 255);
+	font: 9pt &quot;Adobe Heiti Std&quot;;
+	border-radius:5px;
+}
+QPushButton:pressed {
+    background-color: #d3d3d3; /* 明确指定按下时的背景色 */
+}</string>
+      </property>
+      <property name="text">
+       <string>5X</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="zoom10xButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>34</width>
+        <height>34</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	background-color: rgb(255, 255, 255);
+	font: 9pt &quot;Adobe Heiti Std&quot;;
+	border-radius:5px;
+}
+QPushButton:pressed {
+    background-color: #d3d3d3; /* 明确指定按下时的背景色 */
+}</string>
+      </property>
+      <property name="text">
+       <string>10X</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="zoom20xButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>34</width>
+        <height>34</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	background-color: rgb(255, 255, 255);
+	font: 9pt &quot;Adobe Heiti Std&quot;;
+	border-radius:5px;
+}
+QPushButton:pressed {
+    background-color: #d3d3d3; /* 明确指定按下时的背景色 */
+}</string>
+      </property>
+      <property name="text">
+       <string>20X</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="zoom40xButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>34</width>
+        <height>34</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	background-color: rgb(255, 255, 255);
+	font: 9pt &quot;Adobe Heiti Std&quot;;
+	border-radius:5px;
+}
+QPushButton:pressed {
+    background-color: #d3d3d3; /* 明确指定按下时的背景色 */
+}</string>
+      </property>
+      <property name="text">
+       <string>40X</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="actualSizeButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>34</width>
+        <height>34</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	background-color: rgb(255, 255, 255);
+	font: 9pt &quot;Adobe Heiti Std&quot;;
+	border-radius:5px;
+}
+QPushButton:pressed {
+    background-color: #d3d3d3; /* 明确指定按下时的背景色 */
+}</string>
+      </property>
+      <property name="text">
+       <string>1:1</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="zoomLevelButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>34</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	background-color: rgb(255, 255, 255);
+	font: 9pt &quot;Adobe Heiti Std&quot;;
+	border-radius:5px;
+}
+QPushButton:pressed {
+    background-color: #d3d3d3; /* 明确指定按下时的背景色 */
+}</string>
+      </property>
+      <property name="text">
+       <string>缩放倍率</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>resource/缩放.png</normaloff>resource/缩放.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pixelScaleButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>137</width>
+        <height>34</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	background-color: rgb(255, 255, 255);
+	font: 9pt &quot;Adobe Heiti Std&quot;;
+	border-radius:5px;
+}
+QPushButton:pressed {
+    background-color: #d3d3d3; /* 明确指定按下时的背景色 */
+}</string>
+      </property>
+      <property name="text">
+       <string>单位像素对应的长度</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>resource/单位像素对应长度.png</normaloff>resource/单位像素对应长度.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="exportInfoButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>34</width>
+        <height>34</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	background-color: rgb(255, 255, 255);
+	font: 9pt &quot;Adobe Heiti Std&quot;;
+	border-radius:5px;
+}
+QPushButton:pressed {
+    background-color: #d3d3d3; /* 明确指定按下时的背景色 */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>resource/加号.png</normaloff>resource/加号.png</iconset>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ToolBar.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="ToolBarPrefix">
+    <file>resource/标记.png</file>
+    <file>resource/标签图.png</file>
+    <file>resource/测量.png</file>
+    <file>resource/单位像素对应长度.png</file>
+    <file>resource/复位.png</file>
+    <file>resource/加号.png</file>
+    <file>resource/迷你图.png</file>
+    <file>resource/拍照.png</file>
+    <file>resource/缩放.png</file>
+    <file>resource/特效调整.png</file>
+    <file>resource/详细信息.png</file>
+    <file>resource/旋转.png</file>
+    <file>resource/颜色调整.png</file>
+  </qresource>
+</RCC>
